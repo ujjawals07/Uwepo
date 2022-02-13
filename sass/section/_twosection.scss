@@ -1,0 +1,47 @@
+.section-two{
+    padding: 10rem ;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(241, 8, 8, 0.767)), to(rgba(218, 33, 33, 0.74))), url(../img/wepon.jpeg); ;
+    background-image: linear-gradient(rgba(241, 8, 8, 0.767), rgba(218, 33, 33, 0.74)), url(../img/horse.jpeg);
+    background-size: cover;
+    transform: skewY(-6deg);
+    margin-top: -5rem;
+
+    & > *{
+        transform: skewY(6deg);
+    }
+}
+
+.two-box{
+    background-color: rgba(243, 242, 241, 0.753);
+    text-align: center;
+    
+    padding: 15px;
+    box-shadow: 0px 10px 20px black;
+   font-size: 10px;
+   transition: all 0.2;
+   width: 90%;
+
+   @media (max-width:1200px){
+    font-size: 7px;
+  }
+   
+
+   &:hover{
+       transform: translateY(-1.5rem);
+       
+   }
+   
+}
+.i-box{
+    color: blue;
+font-size: 50px ;
+display: inline-block;
+
+}
+.two-text{
+    font-size: 120%;
+    text-align: center;
+}
+.heading-som{
+    font-size: 140%;
+}

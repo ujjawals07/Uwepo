@@ -1,0 +1,45 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+  font-size: 90.5%;
+  
+  @media (max-width:600px){
+    font-size: 50%;
+  }
+    
+  @media (max-width: 900px) {
+     
+      font-size: 95%;
+  }
+
+  @media (max-width: 1200px) {
+     
+    font-size: 99.25%;
+}
+@media (min-width: 1800px) {
+     
+  font-size: 90%;
+}
+}
+body {
+  font-family: "Hind+Madhuri",sans-serif;
+  font-weight: 500;
+ 
+  line-height: 1.7;
+  padding: 20px;
+
+
+  @media (max-width: 1200px){
+    padding: 0% ;
+  }
+}
+
+::selection{
+  background-color: red;
+  color: rgb(241, 238, 238);
+}

@@ -1,0 +1,78 @@
+.btn-box {
+    top: 55%;
+    left: 30%;
+    position: absolute;
+  }
+  
+  .btn-header:link, .btn-header:visited {
+    background-color: rgba(86, 156, 218, 0.836);
+    color: #dbcccc;
+    font-size: 120%;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5PX 20PX;
+    -webkit-animation: moveinbottom 0.5s;
+            animation: moveinbottom 0.5s;
+  }
+  
+  .btn-header:link:hover, .btn-header:visited:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.747);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.747);
+  }
+  
+  .btn-header:link:active, .btn-header:visited:active {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.603);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.603);
+  }
+  
+  .btn-header:link::after, .btn-header:visited::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 100px;
+    background-color: rgba(253, 253, 253, 0.582);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  
+  .btn-header:link:hover::after, .btn-header:visited:hover::after {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+            transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+.btn-section1{
+
+&:link,
+&:visited{
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 0, 0, 0.767);
+        display: inline-block;
+        font-size: 120%;
+        padding: 3px;
+        transition: all 0.5sec;
+}
+&:hover{
+        background-color: rgba(255, 17, 17, 0.712);
+        color: snow;
+        box-shadow:0px 5px 10px black ;
+
+}
+&:active{
+        box-shadow:0px 5px 10px black ;
+}
+
+}

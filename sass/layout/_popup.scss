@@ -1,0 +1,94 @@
+.popup{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.863);
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+    &:target{
+        opacity: 1;
+        visibility: visible;
+      transition: all .5s;
+    }
+   
+
+    &-content{
+        background-color: rgb(241, 234, 234);
+       margin-left: 20%;
+       margin-top: 10%;
+       box-shadow: 0 10px 20px rgb(14, 1, 1);
+    width: 72%;
+    height: 26.4rem;
+       
+    }
+}
+.left{
+    width: 33.33333%;
+    float: left;
+}
+.right{
+    width: 66.66667%;
+    float: left;
+    margin-top: 50px;
+}
+.ujju{
+    width: 70%;
+    display: block;
+}
+.popup-text{
+
+    color: rgb(17, 17, 19);
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 75px;
+    column-count: 2;
+    column-gap: 2rem;
+    
+    width: 90%;
+
+   
+}
+.heading-mom{
+    margin-left: 1px;
+    font-size: 35px;
+    padding-top: 10px;
+    position: absolute;
+    color: crimson;
+
+    
+ 
+}
+.ntn-pop:link,
+.ntn-pop:visited{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid green;
+
+   
+}
+.ntn-pop:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px black;
+    color: green;
+}
+.pop-close{
+    float: right;
+    margin-top: -10%;
+    margin-right: 20px;
+    font-size: 3rem;
+    text-decoration: none;
+    color: red;
+ transition: all .4s;
+}

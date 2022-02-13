@@ -1,0 +1,64 @@
+
+.header {
+    height: 95vh;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(241, 8, 8, 0.767)), to(rgba(218, 33, 33, 0.74))), url(../img/wepon.jpeg); ;
+    background-image: linear-gradient(rgba(241, 8, 8, 0.767), rgba(218, 33, 33, 0.74)), url(../img/wepon.jpeg);
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    position: relative;
+
+
+    @media (max-width:1200px){
+      height: 65vh;
+    }
+   
+  }
+  
+  .logo {
+    height: 60px;
+
+    &-box {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+    }
+    
+  }
+  
+  
+  .text-box {
+    left: 30%;
+    top: 6%;
+    position: absolute;
+  }
+  
+  .heading-primary {
+    color: azure;
+    text-transform: uppercase;
+
+    &-main {
+      font-size: 70px;
+      font-weight: 600;
+      display: block;
+      letter-spacing: 25px;
+      -webkit-animation-name: moveinleft;
+              animation-name: moveinleft;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+    }
+    &-sub {
+      font-size: 23px;
+      font-weight: 250;
+      display: block;
+      letter-spacing: 1px;
+      -webkit-animation-name: moveinright;
+              animation-name: moveinright;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+    }
+  }
+  
+  
+  
